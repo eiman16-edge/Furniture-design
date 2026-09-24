@@ -140,6 +140,7 @@ input {
   bottom: -7px;
   left: 4%;
   white-space: nowrap;
+  border-bottom: 1px solid #bdbdbd;
 }
 .hero-image {
   min-height: 575px;
@@ -242,4 +243,135 @@ input {
   margin: auto;
   padding: 55px 4% 65px;
   background: var(--paper);
+}
+
+@media (max-width: 700px) {
+  .site-header {
+    height: 56px;
+    grid-template-columns: 1fr auto;
+    padding: 0 5%;
+  }
+
+  .nav {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 5%;
+    background: #fff;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav a:last-child {
+    border-bottom: 0;
+  }
+
+  .nav a:first-child {
+    padding-bottom: 12px;
+  }
+
+  .header-actions {
+    gap: 14px;
+  }
+
+  .hero,
+  .philosophy,
+  .collection {
+    width: 90%;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .hero-copy {
+    min-height: 445px;
+    padding: 48px 7% 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .hero h1 {
+    font-size: clamp(36px, 11vw, 52px);
+  }
+
+  .intro {
+    max-width: 100%;
+    font-size: 11px;
+  }
+
+  .hero-word {
+    left: 7%;
+    bottom: 13px;
+    font-size: clamp(62px, 20vw, 100px);
+  }
+
+  .hero-image {
+    min-height: 390px;
+    height: 72vw;
+    max-height: 520px;
+  }
+
+  .product-caption {
+    min-height: 66px;
+    padding: 12px 5%;
+  }
+
+  .product-caption small {
+    max-width: 190px;
+  }
+
+  .page-no {
+    white-space: nowrap;
+  }
+
+  .philosophy {
+    padding: 45px 7% 48px;
+  }
+
+  .philosophy h2 {
+    font-size: clamp(30px, 9vw, 42px);
+  }
+
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin: 32px auto 28px;
+  }
+
+  .philosophy-grid img,
+  .philosophy-grid .featured img {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .rating {
+    flex-wrap: wrap;
+    gap: 6px 8px;
+  }
+
+  .rating p {
+    flex-basis: 100%;
+    max-width: none;
+    text-align: center;
+    margin: 10px 0 0;
+  }
+
+  .collection {
+    padding: 42px 7% 50px;
+  }
 }
