@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nordvik — timeless furniture and quiet Scandinavian design."
+    />
+    <title>Nordvik — Furniture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#">nordvik</a>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About us</a>
+        <a href="#collection">Collection</a>
+        <a href="#journal">Blog</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#collection">Cart (0)</a>
+        <button class="menu-btn" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="short-text">Interiors — Est. 1994 Copenhagen</p>
+          <h1>Shape Your Space<br />Elevate Your Life</h1>
+          <p class="intro">
+            Slow-made pieces for rooms that are meant to be lived in — solid
+            oak, brushed steel, wool woven in the Nordics.
+          </p>
+          <a class="button" href="#collection"
+            >Shop the collection <span>→</span></a
+          >
+          <div class="hero-word">Nordvik</div>
+        </div>
+        <div class="hero-image">
+          <img src="images/image 1444.jpg" alt="Warm modern sofa" />
+          <div class="product-caption">
+            <div>
+              <span>Hidden Lounge Sofa</span
+              ><small
+                >Soft-touch linen, powder-coated steel. Made to order.</small
+              >
+            </div>
+            <span class="page-no">01 / 05　←　→</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="philosophy" id="about">
+        <p class="short-text">Our philosophy</p>
+        <h2>
+          Where design meets<br /><span>lifestyle in perfect harmony</span>
+        </h2>
+        <div class="philosophy-grid">
+          <figure>
+            <img
+              src="images/Copilot_20260916_104952.png"
+              alt="Minimal side table"
+            />
+            <figcaption>Rain side table</figcaption>
+          </figure>
+          <figure class="featured">
+            <img
+              src="images/Copilot_20260916_104948.png"
+              alt="Minimal lounge chair"
+            />
+            <figcaption>Hidden lounge chair</figcaption>
+          </figure>
+          <figure>
+            <img src="images/Copilot_20260916_104954.png" alt="Wooden stool" />
+            <figcaption>Ore stool</figcaption>
+          </figure>
+        </div>
+        <div class="rating">
+          <strong>4.9/5</strong><span>★★★★★</span>
+          <p>
+            Rated by 3,140 owners across 26 countries — for comfort that holds
+            up years after the room has changed around it.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script>
+      const menu = document.querySelector(".menu-btn");
+      const nav = document.querySelector(".nav");
+      menu.addEventListener("click", () => {
+        nav.classList.toggle("open");
+        menu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
